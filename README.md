@@ -25,13 +25,13 @@ The project combines modern DevOps practices, leveraging Docker, Python, APIs, a
 
 The application is structured around Docker containers, each serving a specific purpose:
 
-- **Telegram Bot Container (`aminabuzahra/amin_bot`):** Hosts Python scripts (`app.py` and `bot.py`) for Telegram API interactions and integrates OpenAI API for text processing. Also, interacts with MongoDB for data storage.
-- **YOLOv5 Container (`aminabuzahra/amin_yolo5`):** Dedicated to image processing with YOLOv5, handling image detection and analysis.
+- **Telegram Bot Container (`aminabuzahra/amin_bot`):** Hosts Python scripts (`app.py` and `bot.py`) for Telegram API interactions and integrates OpenAI API for text processing. 
+- **YOLOv5 Container (`aminabuzahra/amin_yolo5`):** Dedicated to image processing with YOLOv5, handling image detection and analysis. Also, interacts with MongoDB for data storage.
 - **MongoDB Containers (`mongo1`, `mongo2`, `mongo3`):** Form a MongoDB replica set, ensuring data availability and redundancy for persistent data storage.
 
 ## Functionality
 
-The bot is powered by Python scripts, with `app.py` managing HTTP requests. The `bot.py` script handles Telegram API interactions, message processing, coordinates with YOLOv5 and MongoDB, and manages the overall operational flow. The YOLOv5 container processes images and communicates results back to the Telegram bot.
+The bot is powered by Python scripts, with `app.py` managing HTTP requests (REST API). The `bot.py` script handles Telegram API interactions, message processing, coordinates with YOLOv5 and MongoDB, and manages the overall operational flow. The YOLOv5 (REST API) container processes images and communicates results back to the Telegram bot.
 
 ## DevOps Integrations
 
@@ -52,4 +52,4 @@ Key DevOps practices integrated into the project:
 
 ## Conclusion
 
-AminBot is a testament to the practical application of DevOps, AI, and cloud services in software development. It showcases the effectiveness of Docker and Python in real-time data processing, emphasizing agility, scalability, and robustness.
+AminBot is a testament to the practical application of DevOps, AI, REST APIs, and cloud services in software development. It showcases the effectiveness of Docker and Python in real-time data processing, emphasizing agility, scalability, and robustness.
