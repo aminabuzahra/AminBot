@@ -41,7 +41,7 @@ Key DevOps practices integrated into the project:
 - **GitHub Version Control:** Facilitates collaborative development and effective change management.
 - **Monitoring and Security:** Utilizes Snyk for vulnerability scanning and NGROK for secure tunneling.
 
-## Lana Bot Telegram Issues
+## Amin Bot Telegram Issues
 
 1. When using the Telegram bot (Lana Bot) that leverages the OpenAI API, there's an issue with maintaining the context of the conversation. This problem needs to be addressed in the Python code within `bot.py`.
 
