@@ -43,7 +43,7 @@ Key DevOps practices integrated into the project:
 
 ## Amin Bot Telegram Issues
 
-1. When using the Telegram bot (Lana Bot) that leverages the OpenAI API, there's an issue with maintaining the context of the conversation. This problem needs to be addressed in the Python code within `bot.py`.
+1. When using the Telegram bot (Amin Bot) that leverages the OpenAI API, there's an issue with maintaining the context of the conversation. This problem needs to be addressed in the Python code within `bot.py`.
 
 2. Synchronize Telegram message responses.
 
