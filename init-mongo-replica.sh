@@ -10,3 +10,11 @@ docker exec -it mongo1 mongosh --eval "rs.initiate({
    {_id: 2, host: \"mongo3\"}
  ]
 })"
+
+if [ $? -ne 0 ]; then
+    echo "Failed to initialize replica set."
+    exit 1
+fi
+
+echo "Replica set initialized successfully."
+exit 0
